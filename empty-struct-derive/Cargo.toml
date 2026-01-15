@@ -1,0 +1,19 @@
+[package]
+name = "see-migration-test-helpers-derive"
+version.workspace = true
+edition.workspace = true
+authors = ["Kirill Ivanov <bragov4ik@hotmail.com>"]
+description = "A proc macro to derive EmptyStruct trait implementation"
+keywords = ["derive"]
+license = "MIT"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "2.0", features = ["full"] }
+quote = "1.0"
+proc-macro2 = "1.0"
+
+[dev-dependencies]
+see-migration-test-helpers = { version = "1", path = "../migration-helpers" }

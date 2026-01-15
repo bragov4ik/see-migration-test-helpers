@@ -1,0 +1,15 @@
+[package]
+name = "see-migration-test-helpers"
+version.workspace = true
+edition.workspace = true
+authors = ["Kirill Ivanov <bragov4ik@hotmail.com>"]
+description = "Helper types for sea-orm-migration testing"
+categories = ["database"]
+keywords = ["testing"]
+license = "MIT"
+
+
+[dependencies]
+see-migration-test-helpers-derive = { version = "1", path = "../empty-struct-derive" }
+sea-orm-migration = "1"
+async-trait = "0.1"
