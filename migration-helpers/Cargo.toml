@@ -3,6 +3,7 @@ name = "see-migration-test-helpers"
 version.workspace = true
 edition.workspace = true
 authors = ["Kirill Ivanov <bragov4ik@hotmail.com>"]
+homepage = "https://github.com/bragov4ik/see-migration-test-helpers"
 description = "Helper types for sea-orm-migration testing"
 categories = ["database"]
 keywords = ["testing"]

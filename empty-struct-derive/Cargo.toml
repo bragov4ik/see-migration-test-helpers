@@ -3,6 +3,7 @@ name = "see-migration-test-helpers-derive"
 version.workspace = true
 edition.workspace = true
 authors = ["Kirill Ivanov <bragov4ik@hotmail.com>"]
+homepage = "https://github.com/bragov4ik/see-migration-test-helpers"
 description = "A proc macro to derive EmptyStruct trait implementation"
 keywords = ["derive"]
 license = "MIT"
