@@ -4,6 +4,7 @@ version.workspace = true
 edition.workspace = true
 authors = ["Kirill Ivanov <bragov4ik@hotmail.com>"]
 homepage = "https://github.com/bragov4ik/see-migration-test-helpers"
+readme = "README.md"
 description = "A proc macro to derive EmptyStruct trait implementation"
 keywords = ["derive"]
 license = "MIT"

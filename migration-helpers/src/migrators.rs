@@ -4,6 +4,11 @@ use sea_orm_migration::prelude::*;
 
 use super::EmptyStruct;
 
+/// A migrator that runs all migrations up to (but not including) a specific migration.
+///
+/// Use this to set up your database state before testing a specific migration.
+///
+/// See an example in [crate documentation](crate).
 pub struct MigratorBeforeTested<FullMigrator, TestedMigration>(
     PhantomData<FullMigrator>,
     PhantomData<TestedMigration>,
@@ -24,6 +29,11 @@ where
     }
 }
 
+/// A migrator that runs all migrations including a specific migration.
+///
+/// Use this to apply the tested migration after setting up the database with `MigratorBeforeTested`.
+///
+/// See an example in [crate documentation](crate).
 pub struct MigratorWithTested<FullMigrator, TestedMigration>(
     PhantomData<FullMigrator>,
     PhantomData<TestedMigration>,
